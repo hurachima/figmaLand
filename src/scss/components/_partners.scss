@@ -1,0 +1,74 @@
+.partners {
+  margin: 200px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    padding-bottom: 17px;
+    @include mobile {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--text-color);
+    margin: 0;
+    max-width: 532px;
+    text-align: center;
+    @include mobile {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+
+    @include mini-desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    max-width: 273px;
+    padding: 40px;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-text {
+    padding-bottom: 15px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .button--partners {
+    font-weight: 700;
+  }
+}
